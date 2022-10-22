@@ -4,8 +4,8 @@
 #include <stdlib.h>
 
 int main()
-{    int a=3, b=9, sum1=0, sum2=0;
-     float c=8.7,d=5.6, sub1, sub2;
+{    int a=10, b=4, sum1=0, sub1=0;
+     float c=4.0,d=2.0, sum2=0, sub2=0;
      
      scanf("%d" , &a);
      scanf("%d", &b);
@@ -17,8 +17,10 @@ int main()
      sum2 = c+d;
      sub2 = c-d;
      
-     printf("%d %d\n", sum1, sum2);
-     printf("%.1f %.1f", sub1 , sub2);
-          
+     printf("%d %d\n", sum1, sub1);
+     printf("%0.1f %0.1f", sum2 , sub2);
+        
+	
+    
     return 0;
 }
