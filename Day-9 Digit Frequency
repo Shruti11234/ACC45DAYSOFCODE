@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    char num[5000];
+    scanf("%s" , num);
+    int count1=0, count2=0, count3=0, count4=0, count5=0, count6=0, count7=0, count8=0, count9=0 , count10=0;
+    int i=0;
+     while(num[i]!='\0')
+        {
+            
+           if(num[i]=='0')
+           {
+               count1++;
+           }        
+          
+           if(num[i]=='1')
+           {
+               count2++;
+           }
+          
+           if(num[i]=='2')
+           {
+               count3++;
+           }
+           
+           if(num[i]=='3')
+           {
+               count4++;
+           }
+        
+           if(num[i]=='4')
+           {
+               count5++;
+           }
+        
+           if(num[i]=='5')
+           {
+               count6++;
+           }
+        
+           if(num[i]=='6')
+           {
+               count7++;
+           }
+        
+           if(num[i]=='7')
+           {
+               count8++;
+           }
+           
+            if(num[i]=='8')
+           {
+               count9++;
+           }
+           
+            if(num[i]=='9')
+           {
+               count10++;
+           }
+           i++;
+        }   
+           printf("%d ", count1);
+           printf("%d ", count2);
+           printf("%d ", count3);
+           printf("%d ", count4);
+           printf("%d ", count5);
+           printf("%d ", count6);
+           printf("%d ", count7);
+           printf("%d ", count8);
+           printf("%d ", count9);
+           printf("%d ", count10);
+          
+    return 0;
+}
