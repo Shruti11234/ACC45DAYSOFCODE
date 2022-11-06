@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int i,j,min,n,a[50];
+	cout<<"ARRAY SIZE"<<endl;
+	cin>>n;
+	cout<<"ENTER ELEMENT"<<endl;
+	for(i=0;i<n;i++){
+		cin>>a[i];
+	}
+	cout<<"SORTING ELEMENT"<<endl;
+	for(i=0;i<n;i++){
+		cout<<a[i]<<"  ";
+	}
+	for(i=0;i<n;i++){
+		min=i;
+		for(j=i+1;j<n;j++){
+			if(a[j]<a[min]){
+				min=j;
+				//swap(a[i],a[min]);    // take more time for running "time complexi ty"
+			}
+		}
+		swap(a[i ],a[min]);
+	}
+	cout<<"\nSORTED ARRAY"<<endl;
+	for(i=0;i<n;i++){
+		cout<<a[i]<<"  ";
+	}
+	return 0;
+}
