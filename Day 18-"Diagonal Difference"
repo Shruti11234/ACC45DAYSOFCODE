@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+#include <math.h>
+using namespace std;
+
+string ltrim(const string &);
+string rtrim(const string &);
+vector<string> split(const string &);
+
+
+
+
+
+int main(){
+int m,a[2000][2000];
+int d1=0,d2=0;
+cin>>m;
+
+for (int i = 0; i < m; i++){
+        for (int j = 0; j < m; j++)
+            cin >> a[i][j];
+}
+for(int i=0; i<m;i++){
+    d1 +=a [i][i];
+}
+for(int i=0;i<m;i++){
+    for(int j=0; j<m;j++){
+        if((i+j)==m-1){
+            d2=a[i][j]+d2;
+        }
+    }
+}
+int dif=d1-d2;
+dif=abs(dif);
+cout<<dif;
+return 0;
+}
