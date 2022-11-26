@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	// Complete the program
+    string s; 
+    string x;
+    cin>>s>>x;
+    
+    
+    long len = s.size();
+    long len1 = x.size();
+    cout<<len<<" "<<len1<<endl;
+    
+    string z = s+x;
+    cout<<z<<endl;
+    
+    char y=s[0];
+    s[0]=x[0];
+    x[0]=y;
+        
+    cout<<s<<" "<<x<<endl;
+    return 0;
+}
